@@ -84,7 +84,7 @@ input {
     color: #4b5563;
     font-size: 1rem;
     border: none;
-    box-shadow: 0 0.2px 8px #EBAD25;
+    box-shadow: 0 0.2px 8px #c7bba0;
     border-radius: 0.5rem;
     width: 60%;
 }
@@ -93,7 +93,7 @@ button {
     background: #EBAD25;
     border: none;
     padding: 1rem 4rem 1rem 4rem;
-    box-shadow: 0 1px 18px #EFF6FF;
+    box-shadow: 0 1px 18px #627896;
     border-radius: 0.25rem;
     color: white;
     font-size: 1rem;
@@ -143,9 +143,9 @@ button {
     }
 
     .container-center {
-        margin: 0;
-        border-radius: 0;
-        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 0.5rem;
     }
 
     .column1 {
@@ -157,11 +157,8 @@ button {
         text-align: center;
     }
 
-    .row {
-        margin: 2rem;
-    }
-
     input {
         width: 90%;
+        border-radius: 0.5rem;
     }
 }
