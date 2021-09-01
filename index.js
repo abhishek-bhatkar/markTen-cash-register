@@ -3,6 +3,7 @@ const billAmount = document.querySelector("#bill-amount");
 const cashGiven = document.querySelector("#cash-given");
 const checkButton = document.querySelector("#check-button");
 const message = document.querySelector("#error-message");
+const messageField = document.querySelector(".error");
 const noOfNotes = document.querySelectorAll(".noOfNotes");
 const availableNotes = [2000, 500, 100, 20, 10, 5, 1];
 //processing
@@ -15,7 +16,7 @@ function validateBillandCash(){
             setMessage("Please enter bill amount!");
         } else if(billAmount.value < 0 || !Number.isInteger(Number(billValue))){
             setMessage("Please enter valid bill amount!");
-        } else if(billAmount.value === 0){
+        } else if(billValue === 0){
             setMessage("Bill amount cannot be zero!");
         } else{
             console.log("true");
@@ -71,11 +72,14 @@ function displayChange(returnNotes){
 
 function setMessage(msg){
     message.innerText = msg;
+    messageField.style.display = "flex";
 };
 
 function reset(){
     message.innerText = " ";
     //console.log("msg");
+    message.style = "color:red";
+    messageField.style.display = "none";
 };
 
 //output
@@ -83,9 +87,8 @@ function reset(){
 checkButton.addEventListener("click", () => {
     if(checkButton.innerText == "Next"){
         if(validateBillandCash() === true){
+            cashGiven.style.display = "flex";
             checkButton.innerText = "Submit";
-        } else {
-
         }
     } else if(validateBillandCash() === true){
         let change = calculateChange();

@@ -9,57 +9,78 @@
 </head>
 <body>
 
-    <div class="container">
-        <h1 class="heading">
-            Cash Register Manager
-        </h1>
-        <p class="description">
-            Enter the bill amount and cash given by the customer and know minimum number of notes to return.
-        </p>
-                <input id="bill-amount" type="text" placeholder="Enter the bill amount"></input>
-                <input id="cash-given" type="text" placeholder="Enter the cash given"></input>
+<nav class="navigation">
+    <div class="nav-brand">Cash register manager</div>
+</nav>
+    
 
-                
-                <button id="check-button">Next</button>
-                <p id="error-message"></p>
-                <table class="styled-table bordered">
-                    <thead>
-                      <tr>
-                        <th style="padding-right:3rem">Note</th>
-                        <th>No. of Notes</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr class="active-row">
-                        <td>2000</td>
-                        <td class="noOfNotes">0</td>
-                      </tr>
-                      <tr>
-                        <td>500</td>
-                        <td class="noOfNotes">0</td>
-                      </tr>
-                      <tr>
-                        <td>100</td>
-                        <td class="noOfNotes">0</td>
-                      </tr>
-                      <tr>
-                        <td>20</td>
-                        <td class="noOfNotes">0</td>
-                      </tr>
-                      <tr>
-                        <td>10</td>
-                        <td class="noOfNotes">0</td>
-                      </tr>
-                      <tr>
-                        <td>5</td>
-                        <td class="noOfNotes">0</td>
-                      </tr>
-                      <tr>
-                        <td>1</td>
-                        <td class="noOfNotes">0</td>
-                      </tr>
-                    </tbody>
-                  </table>
+
+    <div class="container container-center">
+        
+        
+        
+        <div class="row1">
+            <div class="column"><h1>Find the change to return</h1></div>
+        </div>
+
+
+
+        <div class="row container-center">
+            <input id="bill-amount" type="text" placeholder="Enter Bill Amount">
+            
+        </div>
+        <div  id="cash-given-row">
+            <input class="row container-center row2" id="cash-given" type="text" placeholder="Enter Cash given by customer">
+        </div>
+        <div class="row container-center error">
+            <p id="error-message" style="color:red; margin:1rem"></p>
+
+        </div>
+        <div class="row container-center">
+            <button id="check-button">Next</button>
+        </div>
+
+       
+        
+              <table class="styled-table bordered">
+                <thead>
+                  <tr>
+                    <th style="padding-right:3rem">Note</th>
+                    <th>No. of Notes</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="active-row">
+                    <td>2000</td>
+                    <td class="noOfNotes">0</td>
+                  </tr>
+                  <tr>
+                    <td>500</td>
+                    <td class="noOfNotes">0</td>
+                  </tr>
+                  <tr>
+                    <td>100</td>
+                    <td class="noOfNotes">0</td>
+                  </tr>
+                  <tr>
+                    <td>20</td>
+                    <td class="noOfNotes">0</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td class="noOfNotes">0</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td class="noOfNotes">0</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td class="noOfNotes">0</td>
+                  </tr>
+                </tbody>
+              </table>
+              
 
     </div>
     
